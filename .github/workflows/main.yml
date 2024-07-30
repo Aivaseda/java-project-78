@@ -1,4 +1,4 @@
-name: Data Validator
+name: Java CI
 
 on:
   - push
