@@ -22,7 +22,7 @@ public class StringSchema {
         minLengthPredicate = value -> value.length() >= length;
         return this;
     }
-    public StringSchema contains(String string){
+    public StringSchema contains(String string) {
         subString = string;
         containsPredicate = value -> value.contains(subString);
         return this;
@@ -41,7 +41,7 @@ public class StringSchema {
 
         if (requiredPredicate == null) {
             statusList.add(true);
-        }else {
+        } else {
             statusList.add(requiredPredicate.test(value));
         }
         return !statusList.contains(false);
