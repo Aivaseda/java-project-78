@@ -1,9 +1,11 @@
 package hexlet.code.schemas;
 
 
+import static java.util.Objects.isNull;
+
 public final class StringSchema extends BaseSchema<String> {
     public StringSchema required() {
-        addCheck("required", value -> value != null && !value.isEmpty());
+        addCheck("required", value -> !isNull(value)  && !value.isEmpty());
         return this;
     }
     public StringSchema minLength(int length) {

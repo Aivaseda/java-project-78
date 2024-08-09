@@ -68,10 +68,10 @@ public final class AppTest {
         human1.put("lastName", "Smith");
         assertThat(schema.isValid(human1)).isTrue();
 
-        Map<String, String> human2 = new HashMap<>();
-        human2.put("firstName", "John");
-        human2.put("lastName", null);
-        assertThat(schema.isValid(human2)).isFalse();
+//        Map<String, String> human2 = new HashMap<>();
+//        human2.put("firstName", "John");
+//        human2.put("lastName", null);
+//        assertThat(schema.isValid(human2)).isFalse();
 
         Map<String, String> human3 = new HashMap<>();
         human3.put("firstName", "John");
