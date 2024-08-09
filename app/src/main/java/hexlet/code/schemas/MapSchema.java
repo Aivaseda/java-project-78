@@ -5,7 +5,7 @@ import java.util.function.Predicate;
 
 import static java.util.Objects.isNull;
 
-public class MapSchema extends BaseSchema<Map> {
+public final class MapSchema extends BaseSchema<Map> {
     public MapSchema required() {
         addCheck("required", value -> !isNull(value));
         return this;
