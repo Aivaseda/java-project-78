@@ -12,4 +12,8 @@ public class MapSchema extends BaseSchema<Map> {
         addCheck("sizeof", value -> value.size() == size);
         return this;
     }
+
+    public void shape(Map maps) {
+
+    }
 }
